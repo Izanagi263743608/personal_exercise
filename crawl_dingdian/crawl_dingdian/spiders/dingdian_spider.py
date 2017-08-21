@@ -17,7 +17,7 @@ sys.setdefaultencoding('utf-8')
 
 class Myspider(scrapy.Spider):
     name = 'dingdian_spider'
-    allowed_domians = ['x23us.com']
+    allowed_domains = ['x23us.com']
     base_url = 'http://www.x23us.com/class/'
     url_suffix = '.html'
 

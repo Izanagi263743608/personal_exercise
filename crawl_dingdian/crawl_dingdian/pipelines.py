@@ -9,7 +9,7 @@ import json
 
 class CrawlDingdianPipeline(object):
     def __init__(self):
-        self.file = codecs.open(r'C:\Users\Administrator\Desktop\test\dingdian_novel.json', 'wb', encoding='utf-8')
+        self.file = codecs.open(r'C:\Users\Administrator\Desktop\dingdian_novel.json', 'wb', encoding='utf-8')
 
     def process_item(self, item, spider):
         line = json.dumps(dict(item)) + '\n'
